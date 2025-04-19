@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+      {
+        "name": "Debug FastAPI (main.py)",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/main.py",
+        "args": [
+          "run",
+          "--host", "127.0.0.1",
+          "--port", "8000",
+          "--reload"
+        ],
+        "jinja": true,
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}",
+          "UVICORN_CMD": "uvicorn main:app --reload"
+        },
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+  
